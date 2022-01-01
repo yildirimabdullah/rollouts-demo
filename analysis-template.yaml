@@ -1,0 +1,24 @@
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: pass
+spec:
+  revisionHistoryLimit: 1
+  metrics:
+    - name: pass
+      failureLimit: 0
+      provider:
+        job:
+          spec:
+            template:
+              metadata:
+                annotations:
+                  sidecar.istio.io/inject: "false"
+              spec:
+                containers:
+                  - name: sleep
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [exit 0]
+                restartPolicy: Never
+            backoffLimit: 0
