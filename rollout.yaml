@@ -35,8 +35,8 @@ spec:
               port: http
   strategy:
     blueGreen:
-      activeService: rollouts-demo-svc
-      previewService: rollouts-demo-preview-svc
+      activeService: rollouts-demo
+      previewService: rollouts-demo-preview
       autoPromotionSeconds: 30
       prePromotionAnalysis:
         templates:
