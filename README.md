@@ -17,3 +17,4 @@ argocd app create rollouts-demo --repo https://github.com/alexmt/rollouts-demo-d
 3. Change image tag in `kustomization.yaml`. Available tags are `red`, `green`, `blue`, `yellow` and synchronize the change using Argo CD.
 
 4. Verify that application is serving canary traffic and promote canary deployment.
+
