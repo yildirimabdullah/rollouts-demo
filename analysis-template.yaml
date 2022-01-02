@@ -3,7 +3,6 @@ apiVersion: argoproj.io/v1alpha1
 metadata:
   name: pass
 spec:
-  revisionHistoryLimit: 1
   metrics:
     - name: pass
       failureLimit: 0
