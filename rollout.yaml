@@ -40,7 +40,7 @@ spec:
        autoPromotionSeconds: 30
        prePromotionAnalysis:
          templates:
-           - templateName: pass
+           - templateName: spr-analysis-template
     #canary:
     #  steps:
     #  - setWeight: 20
