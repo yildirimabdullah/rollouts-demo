@@ -8,5 +8,5 @@ resources:
 - analysis-template.yaml
 images:
 - name: alexmt/rollouts-demo
-  newTag: blue
+  newTag: green
   
